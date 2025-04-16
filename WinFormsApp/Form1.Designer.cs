@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button1 = new Button();
+            shopButton = new Button();
             SuspendLayout();
             // 
             // label1
@@ -41,21 +41,22 @@
             label1.TabIndex = 0;
             label1.Text = "$";
             // 
-            // button1
+            // shopButton
             // 
-            button1.Location = new Point(676, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 1;
-            button1.Text = "Shop";
-            button1.UseVisualStyleBackColor = true;
+            shopButton.Location = new Point(676, 12);
+            shopButton.Name = "shopButton";
+            shopButton.Size = new Size(112, 34);
+            shopButton.TabIndex = 1;
+            shopButton.Text = "Shop";
+            shopButton.UseVisualStyleBackColor = true;
+            shopButton.Click += shopButton_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(shopButton);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
@@ -66,6 +67,6 @@
         #endregion
 
         private Label label1;
-        private Button button1;
+        private Button shopButton;
     }
 }

@@ -6,5 +6,11 @@ namespace WinFormsApp
         {
             InitializeComponent();
         }
+
+        private void shopButton_Click(object sender, EventArgs e)
+        {
+            ShopForm shop = new();
+            shop.Show();
+        }
     }
 }
