@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ShopForm";
+            buyButton = new Button();
+            SuspendLayout();
+            // 
+            // buyButton
+            // 
+            buyButton.Location = new Point(523, 58);
+            buyButton.Name = "buyButton";
+            buyButton.Size = new Size(112, 34);
+            buyButton.TabIndex = 0;
+            buyButton.Text = "buy";
+            buyButton.UseVisualStyleBackColor = true;
+            buyButton.Click += buyButton_Click;
+            // 
+            // ShopForm
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(buyButton);
+            Name = "ShopForm";
+            Text = "ShopForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button buyButton;
     }
 }

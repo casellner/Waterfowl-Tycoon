@@ -16,5 +16,10 @@ namespace WinFormsApp
         {
             InitializeComponent();
         }
+
+        private void buyButton_Click(object sender, EventArgs e)
+        {
+            // TODO: update money
+        }
     }
 }
